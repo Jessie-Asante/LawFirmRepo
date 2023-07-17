@@ -5,7 +5,7 @@ namespace LawFirm.Infrastructure.Data
 {
     public partial class DbLawFirmContext:DbContext
     {
-        public DbLawFirmContext(DbContextOptions options):base(options)
+        public DbLawFirmContext(DbContextOptions<DbLawFirmContext> options):base(options)
         {
                 
         }

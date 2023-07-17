@@ -4125,11 +4125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Application\\LawFirm.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Application\\LawFirm.Application.csproj",
       "projectName": "LawFirm.Application",
-      "projectPath": "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Application\\LawFirm.Application.csproj",
+      "projectPath": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Application\\LawFirm.Application.csproj",
       "packagesPath": "C:\\Users\\Paa Kwasi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Application\\obj\\",
+      "outputPath": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4151,8 +4151,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Domain\\LawFirm.Domain.csproj": {
-              "projectPath": "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Domain\\LawFirm.Domain.csproj"
+            "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Domain\\LawFirm.Domain.csproj": {
+              "projectPath": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Domain\\LawFirm.Domain.csproj"
             }
           }
         }

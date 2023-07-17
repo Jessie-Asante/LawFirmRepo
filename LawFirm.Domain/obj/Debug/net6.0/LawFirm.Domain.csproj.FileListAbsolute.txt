@@ -1,0 +1,14 @@
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\bin\Debug\net6.0\LawFirm.Domain.deps.json
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\bin\Debug\net6.0\LawFirm.Domain.runtimeconfig.json
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\bin\Debug\net6.0\LawFirm.Domain.dll
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\bin\Debug\net6.0\LawFirm.Domain.pdb
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\LawFirm.Domain.csproj.AssemblyReference.cache
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\LawFirm.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\LawFirm.Domain.AssemblyInfoInputs.cache
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\LawFirm.Domain.AssemblyInfo.cs
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\LawFirm.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\LawFirm.Domain.dll
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\refint\LawFirm.Domain.dll
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\LawFirm.Domain.pdb
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\LawFirm.Domain.genruntimeconfig.cache
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Domain\obj\Debug\net6.0\ref\LawFirm.Domain.dll

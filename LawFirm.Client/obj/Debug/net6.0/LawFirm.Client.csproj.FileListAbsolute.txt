@@ -1,0 +1,14 @@
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\bin\Debug\net6.0\LawFirm.Client.deps.json
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\bin\Debug\net6.0\LawFirm.Client.runtimeconfig.json
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\bin\Debug\net6.0\LawFirm.Client.dll
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\bin\Debug\net6.0\LawFirm.Client.pdb
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\LawFirm.Client.csproj.AssemblyReference.cache
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\LawFirm.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\LawFirm.Client.AssemblyInfoInputs.cache
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\LawFirm.Client.AssemblyInfo.cs
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\LawFirm.Client.csproj.CoreCompileInputs.cache
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\LawFirm.Client.dll
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\refint\LawFirm.Client.dll
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\LawFirm.Client.pdb
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\LawFirm.Client.genruntimeconfig.cache
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm.Client\obj\Debug\net6.0\ref\LawFirm.Client.dll

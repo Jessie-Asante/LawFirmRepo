@@ -1,5 +1,9 @@
+using LawFirm.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<DbLawFirmContext>(options => options.UseSqlServer("DefaultConnection"));
 // Add services to the container.
 
 builder.Services.AddControllers();

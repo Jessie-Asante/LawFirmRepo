@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QwWB5WEkkkJeDgK28ClFVknrEptFX7cjt0B+FfTw0pCclseTyIGu20Tlc7Lu+SdlAHICSZRXrTNlVVa8Jzx+fg==",
+  "dgSpecHash": "TzioiR5ZPAvwRQcMbBn680Pke0V5f3izm88Ch24ndg92u/ySO1g3PtoVb9TRV8XeIWOK/1lnMgxZPQs4hzCq8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm\\LawFirm.Api.csproj",
+  "projectFilePath": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm\\LawFirm.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\autofac\\7.0.0\\autofac.7.0.0.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

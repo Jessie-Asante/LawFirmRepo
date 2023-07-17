@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Client\\LawFirm.Client.csproj": {}
+    "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Client\\LawFirm.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Client\\LawFirm.Client.csproj": {
+    "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Client\\LawFirm.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Client\\LawFirm.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Client\\LawFirm.Client.csproj",
         "projectName": "LawFirm.Client",
-        "projectPath": "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Client\\LawFirm.Client.csproj",
+        "projectPath": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Client\\LawFirm.Client.csproj",
         "packagesPath": "C:\\Users\\Paa Kwasi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paa Kwasi\\source\\repos\\LawFirm.Client\\obj\\",
+        "outputPath": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
