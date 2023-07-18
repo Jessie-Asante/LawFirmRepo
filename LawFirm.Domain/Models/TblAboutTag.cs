@@ -8,9 +8,9 @@ namespace LawFirm.Domain.Models
 {
     public class TblAboutTag
     {
-        public int AbtId { get; set; }
+        public int AbtIdpk { get; set; }
         public byte[]? Image { get; set; }
-        public string ImageHeader { get; set; }
-        public string Caption { get; set; }
+        public string? ImageHeader { get; set; }
+        public string? Caption { get; set; }
     }
 }
