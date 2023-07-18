@@ -26,7 +26,7 @@ namespace LawFirm.Infrastructure.Data
             
             modelBuilder.Entity<TblAboutTag>(entity => 
             {
-                entity.HasKey(e => e.AbtId);
+                entity.HasKey(e => e.AbtIdpk);
             }); 
             
             modelBuilder.Entity<TblServiceTag>(entity => 
