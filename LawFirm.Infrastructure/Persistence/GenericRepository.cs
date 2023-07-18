@@ -1,4 +1,6 @@
 ﻿using LawFirm.Infrastructure.Data;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -38,6 +40,17 @@ namespace LawFirm.Infrastructure.Persistence
             _context.Entry(entity).State = EntityState.Modified;
             return await _context.SaveChangesAsync() > 0;
              
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var entity = await GetById(id);
+            if (entity == null)
+            {
+                return false;
+            }
+            _context.Set<TEntity>().Remove(entity);
+            return await _context.SaveChangesAsync() >0;
         }
     }
 }
