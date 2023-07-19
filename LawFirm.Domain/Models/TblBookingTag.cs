@@ -9,7 +9,6 @@ namespace LawFirm.Domain.Models
     public class TblBookingTag
     {
         public int BktId { get; set; } 
-        public DayOfWeek Day { get; set; } 
         public DateTime dtpDate { get; set; } 
     }
 }
