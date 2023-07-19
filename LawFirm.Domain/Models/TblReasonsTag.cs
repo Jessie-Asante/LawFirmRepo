@@ -9,7 +9,7 @@ namespace LawFirm.Domain.Models
     public class TblReasonsTag
     {
         public int RstId { get; set; }
-        public string Comments { get; set; }
+        public string? Comments { get; set; }
     }
 
    

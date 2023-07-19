@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using LawFirm.Application.Queries.Command;
+using LawFirm.Application.Queries.Requests;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +23,8 @@ namespace LawFirm.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetAllBookings()
         {
-            return null;
+            var response = _mediator.Send(new GetUserBookingCommand { });
+            return Ok(response);
         }
         
         [HttpGet]
@@ -29,7 +32,8 @@ namespace LawFirm.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult> GetHomeById([FromQuery] int Id)
         {
-            return null;
+            var response = _mediator.Send(new GetHomeTagCommand {Id=Id });
+            return Ok(response);
         } 
         
         [HttpGet]
@@ -37,7 +41,8 @@ namespace LawFirm.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult> GetAboutById([FromQuery] int Id)
         {
-            return null;
+            var response = _mediator.Send(new GetAboutTagCommand {Id=Id });
+            return Ok(response);
         } 
         
         [HttpGet]
@@ -45,7 +50,8 @@ namespace LawFirm.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult> GetReasonsById([FromQuery] int Id)
         {
-            return null;
+            var response = _mediator.Send(new GetReasonsCommand {Id=Id });
+            return Ok(response);
         } 
         
         [HttpGet]
@@ -53,7 +59,8 @@ namespace LawFirm.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult> GetServicesById([FromQuery] int Id)
         {
-            return null;
+            var response = _mediator.Send(new GetServicesTagCommand {Id=Id });
+            return Ok(response);
         }
         
         [HttpGet]
@@ -61,7 +68,8 @@ namespace LawFirm.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult> GetBookingDate([FromQuery] int Id)
         {
-            return null;
+            var response = _mediator.Send(new GetBookingCommand { Id=Id});
+            return Ok(response);
         }
     }
 }
