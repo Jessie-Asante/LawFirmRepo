@@ -11,4 +11,6 @@ namespace LawFirm.Domain.Models
         public int RstId { get; set; }
         public string Comments { get; set; }
     }
+
+   
 }
