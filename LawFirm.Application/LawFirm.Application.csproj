@@ -33,7 +33,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Queries\" />
+    <Folder Include="Commands\Requests\DeleteRequest\" />
+    <Folder Include="Commands\Requests\UpdateRequest\" />
+    <Folder Include="Queries\Handlers\" />
+    <Folder Include="Queries\Requests\" />
   </ItemGroup>
 
 </Project>

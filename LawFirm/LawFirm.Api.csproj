@@ -30,10 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\LawFirm.Application\LawFirm.Application.csproj" />
     <ProjectReference Include="..\LawFirm.Domain\LawFirm.Domain.csproj" />
     <ProjectReference Include="..\LawFirm.Infrastructure\LawFirm.Infrastructure.csproj" />
