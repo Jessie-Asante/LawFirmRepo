@@ -18,23 +18,29 @@ namespace LawFirm.Infrastructure.Persistence
                 _context = context;
         }
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        public async Task<IEnumerable<TEntity>> GetAllAsync(string query)
         {
-            return await _context.Set<TEntity>().ToListAsync();
+            return await _context.Set<TEntity>().FromSqlRaw(query).ToListAsync();
         }
 
-        public async Task<TEntity> GetById(int id)
+        public async Task<TEntity> GetById(string query)
         {
-            return await _context.Set<TEntity>().FindAsync(id);
+            return await _context.Set<TEntity>().FromSqlRaw(query).FirstOrDefaultAsync();
         }
 
-        public async Task<TEntity> AddAsync(TEntity entity)
+        public async Task<int> AddAsync(string entity)
         {
-            await _context.Set<TEntity>().AddAsync(entity);
-            await _context.SaveChangesAsync();
-            return entity;
+              _context.Set<TEntity>().FromSqlRaw(entity);
+             return await _context.SaveChangesAsync();
+            
         }
 
+        public async Task<int> Update(string entity)
+        {
+            _context.Set<TEntity>().FromSqlRaw(entity);
+            return await _context.SaveChangesAsync();
+             
+        } 
         public async Task<bool> UpdateAsync(TEntity entity)
         {
             _context.Entry(entity).State = EntityState.Modified;
@@ -42,15 +48,18 @@ namespace LawFirm.Infrastructure.Persistence
              
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(string query)
         {
-            var entity = await GetById(id);
-            if (entity == null)
-            {
-                return false;
-            }
-            _context.Set<TEntity>().Remove(entity);
+           
+            _context.Set<TEntity>().FromSqlRaw(query);
             return await _context.SaveChangesAsync() >0;
         }
+
+        public Task<TEntity> AddAsync(TEntity entity)
+        {
+            throw new NotImplementedException();
+        }
+
+       
     }
 }

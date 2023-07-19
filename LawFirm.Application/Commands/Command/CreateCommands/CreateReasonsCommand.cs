@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LawFirm.Application.Commands.Requests.CreateRequest
 {
-    public class CreateReasonsRequest:IRequest<int>
+    public class CreateReasonsCommand:IRequest<int>
     {
         public CommandReasonsDto create { get; set; }
     }
