@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace LawFirm.Application.Commands.Requests.CreateRequest
 {
-    public class CreateUserBookingRequest:IRequest<int>
+    public class CreateHomeCommand : IRequest<int>
     {
-        public CommandUserBookingDto create { get; set; }
+        public CommandHomesDto create { get; set; }
     }
 }
