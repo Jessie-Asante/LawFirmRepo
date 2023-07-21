@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LawFirm.Application.Queries.Requests
 {
-    public class GetUserBookingCommand:IRequest<IReadOnlyList<UserBookingDto>>
+    public class GetUserBookingCommand:IRequest<IEnumerable<UserBookingDto>>
     {
         
     }

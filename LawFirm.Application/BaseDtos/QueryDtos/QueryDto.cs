@@ -15,12 +15,12 @@ namespace LawFirm.Application.BaseDtos.QueryDtos
     public class UserBookingDto
     {
         public int UsbId { get; set; }
-        public DateTime BookDate { get; set; }
-        public string FName { get; set; }
-        public string LName { get; set; }
-        public string EmailAddress { get; set; }
-        public string MobNox { get; set; }
-        public string Locations { get; set; }
+        public DateTime? BookDate { get; set; }
+        public string? FName { get; set; }
+        public string? LName { get; set; }
+        public string? EmailAddress { get; set; }
+        public string? MobNox { get; set; }
+        public string? Locations { get; set; }
     }
     public class ServicesDto
     {

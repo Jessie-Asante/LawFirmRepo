@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "8MRYMuxHMBVyZGY44/Mo4sMMVwPQK5e/Xy26p91QXZchvKzdqFFmj7CvA5OOZNG3OYp7WBVvtEhVlPgG6eYPoQ==",
+  "dgSpecHash": "wB8FtNF7Xt56JPHUbkD1lkcSgaG64g5JK2aW1D/wQOLuH6/kqujXnmLDMeXd4bKfBC6x0NWhNV5/6sgxG3jqeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Paa Kwasi\\source\\repos\\Firm\\LawFirm.Domain\\LawFirm.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Paa Kwasi\\.nuget\\packages\\autofac\\7.0.0\\autofac.7.0.0.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\automapper.collection\\9.0.0\\automapper.collection.9.0.0.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
@@ -13,9 +12,8 @@
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
-    "C:\\Users\\Paa Kwasi\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
-    "C:\\Users\\Paa Kwasi\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\Paa Kwasi\\.nuget\\packages\\mediatr.extensions.autofac.dependencyinjection\\11.0.0\\mediatr.extensions.autofac.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Paa Kwasi\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\Paa Kwasi\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\mediatr.extensions.fluentvalidation.aspnetcore\\4.0.0\\mediatr.extensions.fluentvalidation.aspnetcore.4.0.0.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.9\\microsoft.aspnetcore.cryptography.internal.7.0.9.nupkg.sha512",
     "C:\\Users\\Paa Kwasi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.9\\microsoft.aspnetcore.cryptography.keyderivation.7.0.9.nupkg.sha512",

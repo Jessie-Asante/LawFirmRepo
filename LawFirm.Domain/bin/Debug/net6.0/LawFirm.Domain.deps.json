@@ -11,8 +11,6 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Collection": "9.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
-          "MediatR": "12.1.1",
-          "MediatR.Extensions.Autofac.DependencyInjection": "11.0.0",
           "MediatR.Extensions.FluentValidation.AspNetCore": "4.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",
@@ -24,17 +22,6 @@
         },
         "runtime": {
           "LawFirm.Domain.dll": {}
-        }
-      },
-      "Autofac/7.0.0": {
-        "dependencies": {
-          "System.Diagnostics.DiagnosticSource": "5.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/Autofac.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.0.0"
-          }
         }
       },
       "AutoMapper/12.0.1": {
@@ -133,35 +120,22 @@
           }
         }
       },
-      "MediatR/12.1.1": {
+      "MediatR/11.0.0": {
         "dependencies": {
-          "MediatR.Contracts": "2.0.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+          "MediatR.Contracts": "1.0.1"
         },
         "runtime": {
-          "lib/net6.0/MediatR.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.1.1.0"
-          }
-        }
-      },
-      "MediatR.Contracts/2.0.1": {
-        "runtime": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "assemblyVersion": "2.0.1.0",
-            "fileVersion": "2.0.1.0"
-          }
-        }
-      },
-      "MediatR.Extensions.Autofac.DependencyInjection/11.0.0": {
-        "dependencies": {
-          "Autofac": "7.0.0",
-          "MediatR": "12.1.1"
-        },
-        "runtime": {
-          "lib/netstandard2.0/MediatR.Extensions.Autofac.DependencyInjection.dll": {
+          "lib/netstandard2.1/MediatR.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.0.0.0"
+          }
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -169,7 +143,7 @@
         "dependencies": {
           "FluentValidation": "11.5.1",
           "FluentValidation.DependencyInjectionExtensions": "11.5.1",
-          "MediatR": "12.1.1",
+          "MediatR": "11.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "runtime": {
@@ -870,13 +844,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Autofac/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-phR/GEk5h2kQWbMl70cZzCW5ysGxmz2ClaX5CuTw9qc3wtdDu3l9GAhWiWmZLltCytEIxIw98NtAraiOxazqLg==",
-      "path": "autofac/7.0.0",
-      "hashPath": "autofac.7.0.0.nupkg.sha512"
-    },
     "AutoMapper/12.0.1": {
       "type": "package",
       "serviceable": true,
@@ -933,26 +900,19 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "MediatR/12.1.1": {
+    "MediatR/11.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1AbwzzeS6gn4NdcO6A9LfKS5TXXgAiUQM3J18dREHa7O7TrdCXJ5dNFeRBpzPZY7UWl5Kby+n9pWrPJe3SDiMA==",
-      "path": "mediatr/12.1.1",
-      "hashPath": "mediatr.12.1.1.nupkg.sha512"
+      "sha512": "sha512-8klzVGZQiA2oxZRzQFBZbdPD/IQUm9RYtfiyTDKhxDQ99Gi93+GXt1ZJjH2D7Lh7ZFHCv5XdkwbmfHEQBCatPg==",
+      "path": "mediatr/11.0.0",
+      "hashPath": "mediatr.11.0.0.nupkg.sha512"
     },
-    "MediatR.Contracts/2.0.1": {
+    "MediatR.Contracts/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
-      "path": "mediatr.contracts/2.0.1",
-      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
-    },
-    "MediatR.Extensions.Autofac.DependencyInjection/11.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+TqonWWwkHG4lJPLBpwKCH6kmuhbd8RFhjKEhVQfSpxOSh88MgmMYSQA1hAZR0/9y2E94NCJvpHIAq6vn2Aa8w==",
-      "path": "mediatr.extensions.autofac.dependencyinjection/11.0.0",
-      "hashPath": "mediatr.extensions.autofac.dependencyinjection.11.0.0.nupkg.sha512"
+      "sha512": "sha512-NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "path": "mediatr.contracts/1.0.1",
+      "hashPath": "mediatr.contracts.1.0.1.nupkg.sha512"
     },
     "MediatR.Extensions.FluentValidation.AspNetCore/4.0.0": {
       "type": "package",

@@ -9,28 +9,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LawFirm.Application.Commands.CommandHandlers
+namespace LawFirm.Application.Commands.CommandHandlers.CreateHandlers
 {
-    public class CreateServicesHandler:IRequestHandler<CreateServiceCommand, int>
+    public class CreateReasonsHandler : IRequestHandler<CreateReasonsCommand, int>
     {
-        private readonly IGenericRepository<TblServiceTag> _repo;
+        private readonly IGenericRepository<TblReasonsTag> _repo;
         private readonly IMapper _mapper;
-        public CreateServicesHandler(IGenericRepository<TblServiceTag> repo, IMapper mapper)
+        public CreateReasonsHandler(IGenericRepository<TblReasonsTag> repo, IMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
         }
 
-        public async Task<int> Handle(CreateServiceCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateReasonsCommand request, CancellationToken cancellationToken)
         {
             var dto = request.create;
-            var entity = new TblServiceTag();
+            var entity = new TblReasonsTag();
             _mapper.Map(dto, entity);
-            string query = ($"[dbo].[spcInsertServicesTag] @Header = {request.create.Header}, @Comments ={request.create.Comments}");
+            string query = $"[dbo].[spcInsertReasonsTags] @Comments ={request.create.Comments}";
             var response = await _repo.AddAsync(query);
             return response;
         }
     }
-
-   
 }

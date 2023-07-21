@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LawFirm.Application.Commands.CommandHandlers
+namespace LawFirm.Application.Commands.CommandHandlers.CreateHandlers
 {
-    public class CreateBookingHandler:IRequestHandler<CreatingBookingCommand,int>
+    public class CreateBookingHandler : IRequestHandler<CreatingBookingCommand, int>
     {
         private readonly IGenericRepository<TblBookingTag> _repo;
         private readonly IMapper _mapper;
@@ -26,7 +26,7 @@ namespace LawFirm.Application.Commands.CommandHandlers
             var dto = request.create;
             var entity = new TblBookingTag();
             _mapper.Map(dto, entity);
-            string query = ($"[dbo].[spcInsertBookingTags] @dtpDate ={request.create.dtpDate}");
+            string query = $"[dbo].[spcInsertBookingTags] @dtpDate ={request.create.dtpDate}";
             var response = await _repo.AddAsync(query);
             return response;
         }
