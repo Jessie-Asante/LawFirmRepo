@@ -40,21 +40,22 @@ namespace LawFirm.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //CommandDTOs
-            modelBuilder.Entity<CommandHomesDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<CommandReasonsDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<CommandAboutDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<CommandServicesDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<CommandBookingDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<CommandUserBookingDto>(entity =>{ entity.HasNoKey(); });
+            modelBuilder.Entity<CommandHomesDto>().HasNoKey();
+            modelBuilder.Entity<CommandReasonsDto>().HasNoKey();
+            modelBuilder.Entity<CommandAboutDto>().HasNoKey();
+            modelBuilder.Entity<CommandServicesDto>().HasNoKey();
+            modelBuilder.Entity<CommandBookingDto>().HasNoKey();
+            modelBuilder.Entity<CommandUserBookingDto>().HasNoKey();
+              
 
 
             //QueryDTOs
-            modelBuilder.Entity<UserBookingDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<ServicesDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<ReasonsDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<HomeDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<BookingDto>(entity =>{ entity.HasNoKey(); });
-            modelBuilder.Entity<AboutDto>(entity =>{ entity.HasNoKey(); });
+            modelBuilder.Entity<UserBookingDto>().HasNoKey();
+            modelBuilder.Entity<ServicesDto>().HasNoKey();
+            modelBuilder.Entity<ReasonsDto>().HasNoKey();
+            modelBuilder.Entity<HomeDto>().HasNoKey();
+            modelBuilder.Entity<BookingDto>().HasNoKey();
+            modelBuilder.Entity<AboutDto>().HasNoKey();
             
             
             

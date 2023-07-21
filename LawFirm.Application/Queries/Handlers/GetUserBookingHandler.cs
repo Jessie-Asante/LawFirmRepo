@@ -11,21 +11,21 @@ using System.Threading.Tasks;
 
 namespace LawFirm.Application.Queries.Handlers
 {
-    public class GetUserBookingHandler:IRequestHandler<GetUserBookingCommand,IReadOnlyList<UserBookingDto>>
+    public class GetUserBookingHandler:IRequestHandler<GetUserBookingCommand,IEnumerable<UserBookingDto>>
     {
-        private readonly IGenericRepository<IReadOnlyList<UserBookingDto>> _repo;
+        private readonly IGenericRepository<UserBookingDto> _repo;
         private readonly IMapper _mapper;
-        public GetUserBookingHandler(IGenericRepository<IReadOnlyList<UserBookingDto>>repo, IMapper mapper)
+        public GetUserBookingHandler(IGenericRepository<UserBookingDto>repo, IMapper mapper)
         {
                 _repo = repo;
             _mapper = mapper;
         }
 
-        public async Task<IReadOnlyList<UserBookingDto>> Handle(GetUserBookingCommand request, CancellationToken cancellationToken)
+        public async Task<IEnumerable<UserBookingDto>> Handle(GetUserBookingCommand request, CancellationToken cancellationToken)
         {
-            string query = ($"[dbo].[spcGetUserBooking]");
+            string query = $"Exec [dbo].[spcGetUserBooking]";
             var response = await _repo.GetAllAsync(query);
-            return _mapper.Map<IReadOnlyList<UserBookingDto>>(response);
+            return _mapper.Map<IEnumerable<UserBookingDto>>(response);
         }
     }
 }

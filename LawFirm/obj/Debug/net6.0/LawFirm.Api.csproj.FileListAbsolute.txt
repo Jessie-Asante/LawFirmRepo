@@ -8,6 +8,7 @@ C:\Users\Paa Kwasi\source\repos\Firm\LawFirm\bin\Debug\net6.0\LawFirm.Api.pdb
 C:\Users\Paa Kwasi\source\repos\Firm\LawFirm\bin\Debug\net6.0\Autofac.dll
 C:\Users\Paa Kwasi\source\repos\Firm\LawFirm\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Paa Kwasi\source\repos\Firm\LawFirm\bin\Debug\net6.0\AutoMapper.Collection.dll
+C:\Users\Paa Kwasi\source\repos\Firm\LawFirm\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Paa Kwasi\source\repos\Firm\LawFirm\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\Paa Kwasi\source\repos\Firm\LawFirm\bin\Debug\net6.0\Azure.Identity.dll
 C:\Users\Paa Kwasi\source\repos\Firm\LawFirm\bin\Debug\net6.0\FluentValidation.dll

@@ -179,14 +179,6 @@
               "target": "Package",
               "version": "[11.3.0, )"
             },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.1.1, )"
-            },
-            "MediatR.Extensions.Autofac.DependencyInjection": {
-              "target": "Package",
-              "version": "[11.0.0, )"
-            },
             "MediatR.Extensions.FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[4.0.0, )"
@@ -303,18 +295,6 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.3.0, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.1.1, )"
-            },
-            "MediatR.Extensions.Autofac.DependencyInjection": {
-              "target": "Package",
-              "version": "[11.0.0, )"
-            },
-            "MediatR.Extensions.FluentValidation.AspNetCore": {
-              "target": "Package",
-              "version": "[4.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

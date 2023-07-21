@@ -10,9 +10,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LawFirm.Application.Commands.Handlers
+namespace LawFirm.Application.Commands.CommandHandlers.CreateHandlers
 {
-    public class CreateAboutHandler:IRequestHandler<CreateAboutCommand, int>
+    public class CreateAboutHandler : IRequestHandler<CreateAboutCommand, int>
     {
         private readonly IGenericRepository<TblAboutTag> _repo;
         private readonly IMapper _mapper;
