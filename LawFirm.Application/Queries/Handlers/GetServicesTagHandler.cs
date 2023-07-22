@@ -23,8 +23,8 @@ namespace LawFirm.Application.Queries.Handlers
 
         public async Task<ServicesDto> Handle(GetServicesTagCommand request, CancellationToken cancellationToken)
         {
-            string query = $"[dbo].[spcGetServiceTags] @SvtId ={request.Id}";
-            var response = await _repo.GetById(query);
+            FormattableString query = $"[dbo].[spcGetServiceTags] @SvtId ={request.Id}";
+            var response = await _repo.Get(query);
             return _mapper.Map<ServicesDto>(response);
         }
     }
