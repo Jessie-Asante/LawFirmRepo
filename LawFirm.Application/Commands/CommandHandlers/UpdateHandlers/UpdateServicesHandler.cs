@@ -27,7 +27,7 @@ namespace LawFirm.Application.Commands.CommandHandlers.UpdateHandlers
             var dto = request.update;
             var entity = new TblServiceTag();
             _mapper.Map(dto, entity);
-            string query = $"[dbo].[spcUpdateServicesTags] @SvtId = {request.Id}, @Header = {request.update.Header}, @Comments = {request.update.Comments}";
+            FormattableString query = $"[dbo].[spcUpdateServicesTags] @SvtId = {request.Id}, @Header = {request.update.Header}, @Comments = {request.update.Comments}";
             var response = await _genericRepository.Update(query);
             return Unit.Value;
         }

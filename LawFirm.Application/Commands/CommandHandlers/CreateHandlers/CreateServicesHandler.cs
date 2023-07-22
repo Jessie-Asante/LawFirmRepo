@@ -26,8 +26,8 @@ namespace LawFirm.Application.Commands.CommandHandlers.CreateHandlers
             var dto = request.create;
             var entity = new TblServiceTag();
             _mapper.Map(dto, entity);
-            string query = $"[dbo].[spcInsertServicesTag] @Header = {request.create.Header}, @Comments ={request.create.Comments}";
-            var response = await _repo.AddAsync(query);
+            FormattableString query = $"Exec [dbo].[spcInsertServicesTag] @Header = {request.create.Header}, @Comments ={request.create.Comments}";
+            var response = await _repo.Add(query);
             return response;
         }
     }

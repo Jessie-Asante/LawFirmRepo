@@ -28,7 +28,7 @@ namespace LawFirm.Application.Commands.CommandHandlers.UpdateHandlers
             var dto = request.update;
             var entity = new TblBookingTag();
             _mapper.Map(dto, entity);
-            string query = $"[dbo].[spcUpdateBookingTags] @BktId = {request.Id}, @dtpDate = {request.update.dtpDate}";
+            FormattableString query = $"[dbo].[spcUpdateBookingTags] @BktId = {request.Id}, @dtpDate = {request.update.dtpDate}";
             var response = await _genericRepository.Update(query);
             return Unit.Value;
         }

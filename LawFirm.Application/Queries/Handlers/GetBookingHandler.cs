@@ -23,8 +23,8 @@ namespace LawFirm.Application.Queries.Handlers
 
         public async Task<BookingDto> Handle(GetBookingCommand request, CancellationToken cancellationToken)
         {
-            string query = $"[dbo].[spcGetBookingTime] @BktId={request.Id}";
-            var response = await _repo.GetById(query);
+            FormattableString query = $"[dbo].[spcGetBookingTime] @BktId={request.Id}";
+            var response = await _repo.Get(query);
             return _mapper.Map<BookingDto>(response);
         }
     }

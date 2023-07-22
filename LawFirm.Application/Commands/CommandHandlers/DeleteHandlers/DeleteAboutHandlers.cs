@@ -24,9 +24,9 @@ namespace LawFirm.Application.Commands.CommandHandlers.DeleteHandlers
 
         public async Task<bool> Handle(DeleteAboutCommand request, CancellationToken cancellationToken)
         {
-            string query = $"[dbo].[spcDeleteAboutTag] @AbtId ={request.Id}";
-            var response = await _repository.DeleteAsync(query);
-            if (response == false)
+            FormattableString query = $"[dbo].[spcDeleteAboutTag] @AbtId ={request.Id}";
+            var response = await _repository.Delete(query);
+            if (response == 0)
                 return false;
             return true;
         }

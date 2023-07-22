@@ -24,9 +24,9 @@ namespace LawFirm.Application.Commands.CommandHandlers.DeleteHandlers
 
         public async Task<bool> Handle(DeleteHomeCommand request, CancellationToken cancellationToken)
         {
-            string query = $"[dbo].[spcDeleteHomeTag] @HmtID ={request.Id}";
-            var response = await _repository.DeleteAsync(query);
-            if (response==false)
+            FormattableString query = $"[dbo].[spcDeleteHomeTag] @HmtID ={request.Id}";
+            var response = await _repository.Delete(query);
+            if (response==0)
                 return false;
             return true;
         }

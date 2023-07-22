@@ -27,7 +27,7 @@ namespace LawFirm.Application.Commands.CommandHandlers.UpdateHandlers
             var dto = request.update;
             var entity = new TblHomeTag();
             _mapper.Map(dto, entity);
-            string query = $"[dbo].[spcUpdateHomeTag] @HmtId = {request.Id} ,@Image = {request.update.Image}, @ImageHeader = {request.update.ImageHeader}, @Caption = {request.update.Caption}";
+            FormattableString query = $"[dbo].[spcUpdateHomeTag] @HmtId = {request.Id} ,@Image = {request.update.Image}, @ImageHeader = {request.update.ImageHeader}, @Caption = {request.update.Caption}";
             var response = await _genericRepository.Update(query);
             return Unit.Value;
         }

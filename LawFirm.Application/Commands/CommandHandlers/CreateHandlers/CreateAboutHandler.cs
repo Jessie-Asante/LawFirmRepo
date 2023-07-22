@@ -26,8 +26,8 @@ namespace LawFirm.Application.Commands.CommandHandlers.CreateHandlers
             var dto = request.create;
             var entity = new TblAboutTag();
             _mapper.Map(dto, entity);
-            string query = $"[dbo].[spcInsertHomeTag] @Image = {request.create.Image}, @ImageHeader = {request.create.ImageHeader}, @Caption = {request.create.Caption}";
-            var response = await _repo.AddAsync(query);
+            FormattableString query = $"Exec [dbo].[spcInsertHomeTag] @Image = {request.create.Image}, @ImageHeader = {request.create.ImageHeader}, @Caption = {request.create.Caption}";
+            var response = await _repo.Add(query);
             return response;
         }
     }
