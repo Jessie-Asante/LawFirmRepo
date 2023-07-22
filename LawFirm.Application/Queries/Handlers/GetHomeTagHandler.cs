@@ -23,8 +23,8 @@ namespace LawFirm.Application.Queries.Handlers
 
         public async Task<HomeDto> Handle(GetHomeTagCommand request, CancellationToken cancellationToken)
         {
-            string query = $"[dbo].[spcGetHomeTag] @HmtId ={request.Id}";
-            var response = await _repo.GetById(query);
+            FormattableString query = $"[dbo].[spcGetHomeTag] @HmtId ={request.Id}";
+            var response = await _repo.Get(query);
             return _mapper.Map<HomeDto>(response);
         }
     }
