@@ -26,8 +26,8 @@ namespace LawFirm.Application.Commands.CommandHandlers.CreateHandlers
             var dto = request.create;
             var entity = new TblBookingTag();
             _mapper.Map(dto, entity);
-            string query = $"[dbo].[spcInsertBookingTags] @dtpDate ={request.create.dtpDate}";
-            var response = await _repo.AddAsync(query);
+            FormattableString query = $"Exec [dbo].[spcInsertBookingTags] @dtpDate ={request.create.dtpDate}";
+            var response = await _repo.Add(query);
             return response;
         }
     }

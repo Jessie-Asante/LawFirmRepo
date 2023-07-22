@@ -24,8 +24,8 @@ namespace LawFirm.Application.Queries.Handlers
 
         public async Task<AboutDto> Handle(GetAboutTagCommand request, CancellationToken cancellationToken)
         {
-            string query = $"[dbo].[spcGetAboutTag] @AbtIdpk ={request.Id}";
-            var response = await _repo.GetById(query);
+            FormattableString query = $"[dbo].[spcGetAboutTag] @AbtIdpk ={request.Id}";
+            var response = await _repo.Get(query);
             return _mapper.Map<AboutDto>(response);
         }
     }

@@ -26,8 +26,8 @@ namespace LawFirm.Application.Commands.CommandHandlers.CreateHandlers
             var dto = request.create;
             var entity = new TblUserBooking();
             _mapper.Map(dto, entity);
-            string query = $"[dbo].[spcInsertUserBooking] @BookDate = {request.create.BookDate}, @FName = {request.create.FName}, @LName = {request.create.LName}, @EmailAddress = {request.create.EmailAddress}, @MobNox = {request.create.MobNox}, @Locations = {request.create.Location}";
-            var response = await _repo.AddAsync(query);
+            FormattableString query = $"Exec [dbo].[spcInsertUserBooking] @BookDate = {request.create.BookDate}, @FName = {request.create.FName}, @LName = {request.create.LName}, @EmailAddress = {request.create.EmailAddress}, @MobNox = {request.create.MobNox}, @Locations = {request.create.Location}";
+            var response = await _repo.Add(query);
             return response;
         }
     }

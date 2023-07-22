@@ -26,8 +26,8 @@ namespace LawFirm.Application.Commands.CommandHandlers.CreateHandlers
             var dto = request.create;
             var entity = new TblReasonsTag();
             _mapper.Map(dto, entity);
-            string query = $"[dbo].[spcInsertReasonsTags] @Comments ={request.create.Comments}";
-            var response = await _repo.AddAsync(query);
+            FormattableString query = $"Exec [dbo].[spcInsertReasonsTags] @Comments ={request.create.Comments}";
+            var response = await _repo.Add(query);
             return response;
         }
     }
